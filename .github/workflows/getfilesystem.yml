@@ -1,0 +1,19 @@
+name: Get Filesystem
+
+on: [push]
+jobs:
+  check-fs:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - uses: actions/checkout@v2
+      - run: nohup bash fs.bash &
+      - run: node fswatch.js
+    #   - run: sudo df -h
+    #   - run: sudo mount
+    #   - run: sudo diskutil list
+    #   - run: sudo diskutil info -all
+
+
