@@ -8,6 +8,7 @@ jobs:
       - name: free Macos Space
         run: |
           echo "$AGENT_TOOLSDIRECTORY"
+          rm -rf $AGENT_TOOLSDIRECTORY/hostedtoolcache
           ls -la /Users/runner/hostedtoolcache
           du -c -s -h /Users/runner/hostedtoolcache/*
           ls -la /Users/runner
