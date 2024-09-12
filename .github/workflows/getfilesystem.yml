@@ -5,10 +5,11 @@ jobs:
   check-fs:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
       - name: free Macos Space
         run: |
           echo "$AGENT_TOOLSDIRECTORY"
+          ls -la /Users/runner/hostedtoolcache
+          du -c -s -h /Users/runner/hostedtoolcache
           ls -la /Users/runner
           ls -la /Users/runner/.android
           du -c -s -h /Users/runner/.android
