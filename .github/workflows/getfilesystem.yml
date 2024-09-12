@@ -8,9 +8,9 @@ jobs:
       - name: free Macos Space
         run: |
           echo "$AGENT_TOOLSDIRECTORY"
-          du -c -s -h /Users/runner/hostedtoolcache
+          du -c -s -h /Users/runner/hostedtoolcache/*
           echo "Removing CodeQL"
           rm -rf $AGENT_TOOLSDIRECTORY/hostedtoolcache/CodeQL
-          rm -rf /Users/runner/hostedtoolcache/*
-          ls -la /Users/runner/hostedtoolcache/CodeQL
+          rm -rf $AGENT_TOOLSDIRECTORY/hostedtoolcache/dotnet
+          ls -la /Users/runner/hostedtoolcache
           du -c -s -h /Users/runner/hostedtoolcache
