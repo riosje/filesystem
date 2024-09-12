@@ -9,7 +9,5 @@ jobs:
       - name: free Macos Space
         run: |
           echo "$AGENT_TOOLSDIRECTORY"
-          ls -la /Users/runner/hostedtoolcache
-          du -s -c -h /Users/runner/hostedtoolcache
           ls -la ~/.dotnet/tools
           du -c -s -h ~/.dotnet/tools
