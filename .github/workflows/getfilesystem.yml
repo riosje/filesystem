@@ -10,7 +10,7 @@ jobs:
           echo "$AGENT_TOOLSDIRECTORY"
           du -c -s -h /Users/runner/hostedtoolcache/*
           echo "Removing CodeQL"
-          rm -rf /Users/runner/hostedtoolcacheCodeQL
+          rm -rf /Users/runner/hostedtoolcache/CodeQL
           rm -rf /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk
           ls -la /Users/runner/hostedtoolcache
           du -c -s -h /Users/runner/hostedtoolcache
