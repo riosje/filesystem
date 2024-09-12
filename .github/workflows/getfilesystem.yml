@@ -9,5 +9,4 @@ jobs:
       - name: free Macos Space
         run: |
           echo "$AGENT_TOOLSDIRECTORY"
-          ls -la /usr/share/dotnet
-          ls -la /usr/local/lib/android
+          ls -la /Users/runner/hostedtoolcache
