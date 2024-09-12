@@ -13,4 +13,6 @@ jobs:
           ls -la /Users/runner/.android
           du -c -s -h /Users/runner/.android
           ls -la /Users/runner/.net
-          du -c -s -h /Users/runner/.net
+          du -c -s -h /Users/runner/utils
+          ls -la /Users/runner/utils
+          du -c -s -h /Users/runner/*
